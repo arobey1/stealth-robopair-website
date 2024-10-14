@@ -16,7 +16,7 @@ body {
 }
 
 .container {
-    max-width: 520px;
+    max-width: 750px;
     width: 100%;
     margin: 0 auto;
     font-family: 'Palatino', 'Palatino Linotype', 'Book Antiqua', serif;
@@ -102,7 +102,7 @@ body {
 .social-icons {
     display: flex;
     justify-content: center;
-    margin-top: 0px;
+    margin-top: 60px;
     margin-bottom: 20px;
 }
 
@@ -858,6 +858,7 @@ table[data-zoomable]:hover {
     max-width: 90%;
     max-height: 90%;
     border-radius: 10px;
+    margin-top: 150px;
 }
 
 #image-overlay.active {

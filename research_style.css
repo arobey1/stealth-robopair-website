@@ -1,0 +1,72 @@
+.research-page-heading-container {
+    justify-content: center;
+    text-align: center;
+    padding-top: 75px;
+}
+
+.research-page-title {
+    font-size: 2.0rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.research-page-date, .research-page-author {
+    font-size: 1.2rem;
+    color: #525252;
+    margin-bottom: 20px;
+}
+
+.research-page-meta {
+    display: flex;
+    justify-content: center; /* Pushes the author left and the date right */
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.research-page-content {
+    font-size: 1rem;
+    line-height: 1.3rem;
+    margin-bottom: 150px;
+}
+
+.research-page-content p {
+    margin-bottom: 20px;
+    line-height: 1.3rem;
+}
+
+.social-icons div {
+    margin-top: 10px; /* Add space between the icon and the label */
+    font-size: 14px; /* Adjust the label font size */
+    margin-bottom: 20px;
+    text-decoration: underline;
+    color: #555;
+}
+
+/* overwrite styles.css to stack labels */
+.social-icons a {
+    margin-right: 60px;
+    text-align: center; /* Center the text label */
+    display: flex;
+    flex-direction: column; /* Stack the icon and label vertically */
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.bibtex-container {
+    max-width: 100%; /* Ensures it fits within the page container */
+    margin: 0 auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    background-color: #b5b5b5; /* Light near-white background */
+    overflow-x: auto; /* Enables horizontal scrolling */
+    white-space: nowrap; /* Prevent text wrapping */
+    border-radius: 5px; /* Optional: for rounded corners */
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
+}
+
+.bibtex-container pre {
+    font-family: "Menlo", "Courier", monospace;
+    font-size: 0.85em;
+}
