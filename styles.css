@@ -29,7 +29,7 @@ body {
 .social-icons {
     display: flex;
     justify-content: center;
-    margin-top: 60px;
+    margin-top: 10px;
     margin-bottom: 20px;
 }
 
@@ -118,6 +118,12 @@ body {
     margin-bottom: 20px;
 }
 
+@media (max-width: 768px) {
+    .research-page-date, .research-page-author {
+        font-size: 0.9rem; /* Smaller font size on mobile */
+    }
+}
+
 .research-page-meta {
     display: flex;
     justify-content: center; /* Pushes the author left and the date right */
@@ -134,4 +140,49 @@ body {
 .research-page-content p {
     margin-bottom: 20px;
     line-height: 1.3rem;
+}
+
+.research-video-with-caption {
+    text-align: center;
+    margin: 10px 0;
+    margin-bottom: 30px;
+    margin-top: 0px;
+}
+
+.research-video-with-caption video {
+    width: 75%; /* 75% width on desktop */
+    height: auto;
+    margin: 0 auto;
+    border: none;
+}
+
+@media (max-width: 768px) {
+    .research-video-with-caption video {
+        width: 100%; /* 100% width on mobile */
+    }
+}
+
+
+.research-video-with-caption .caption {
+    font-size: 0.9rem;
+    color: #666;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.research-video-with-caption .figure-label {
+    font-weight: bold;
+    color: red;
+}
+
+.research-video-with-caption .caption-text {
+    color: #666;  /* Keeps the gray text for the caption */
+}
+
+
+video::-webkit-media-controls-play-button,
+video::-webkit-media-controls-volume-slider,
+video::-webkit-media-controls-timeline {
+    border: none; /* Remove borders for minimal look */
+    color: #666; /* Control colors */
 }

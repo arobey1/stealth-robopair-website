@@ -19,76 +19,69 @@
         
         <main>
             <div class="research-page-heading-container">
-                <!-- <h1 class="research-page-title">Jailbreaking LLM-Controlled Robots</h1> -->
-                <h1 class="research-page-title">Generic Paper Title</h1>
+                <h1 class="research-page-title">Jailbreaking LLM-Controlled Robots</h1>
                 <div class="research-page-meta">
-                    <p class="research-page-author"></p>
-                        Anonymous authors
-                    </p>
-                    <!-- <p class="research-page-author">
+                    <p class="research-page-author">
                         Alexander Robey, Zachary Ravichandran,<br> Vijay Kumar, Hamed Hassani, George J. Pappas
-                    </p> -->
+                    </p>
                 </div>
             </div>
             
 
             <div class="social-icons">
-                <a href="https://arxiv.org/" target="_blank">
+                <a href="files/research/robopair.pdf" target="_blank">
                     <img src="../../img/icons/pdf-black.png" alt="Paper">
-                    <div>[arXiv paper]</div>
+                    <div>[Paper]</div>
                 </a>
-                <a href="https://twitter.com/">
+                <a href="https://twitter.com/AlexRobey23">
                     <img src="../../img/icons/twitter-black.png" alt="Twitter">
                     <div>[Twitter thread]</div>
                 </a>
-                <a href="https://en.wikipedia.org/wiki/Robot">
+                <a href="https://arobey1.github.io/writing/jailbreakingrobots.html">
                     <img src="../../img/icons/blog-black.png" alt="Cap">
                     <div>[Blog post]</div>
                 </a>
-                <a href="https://github.com/">
+                <!-- <a href="https://github.com/">
                     <img src="../../img/icons/github-black.png" alt="GitHub">
                     <div>[Source code]</div>
-                </a>
+                </a> -->
+            </div>
+
+            <div class="research-video-with-caption">
+                <video controls>
+                  <source src="files/research/bomb.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+                <div class="caption">
+                    <span class="figure-label">Figure 1:</span> 
+                    <span class="caption-text">Jailbreaking the Unitree Go2 robot dog.</span>
+                </div>
+
             </div>
             
             <div class="research-page-content">
 
                 <p>
-                    <span class="bold-text">Summary.</span> Lorem ipsum odor amet, consectetuer adipiscing elit. Facilisis tempus convallis pulvinar felis eleifend. Fermentum himenaeos vestibulum lacus congue nibh justo vehicula. Semper pulvinar porttitor suscipit vitae; risus mollis hac vel nisl. Leo tempus massa turpis; diam montes interdum. Id penatibus nostra porttitor hac id litora convallis. Curae commodo integer maximus quisque ipsum accumsan posuere sed. Blandit condimentum praesent est morbi efficitur pharetra diam cursus. Porta fringilla potenti nisl curae fames tempor leo nostra. Viverra placerat mus duis montes consequat. Quam ligula orci imperdiet mauris ultricies neque primis mattis erat? Nisi neque facilisis nulla habitant nisi. Iaculis tempus aliquet ante penatibus pretium sodales facilisis. Senectus phasellus tortor pulvinar sagittis commodo malesuada lectus. Quisque vehicula nullam interdum molestie cursus duis. Mollis luctus taciti senectus sodales quam bibendum eu. Taciti erat tincidunt facilisis libero dignissim quam viverra molestie. Aliquam nascetur at ipsum tristique varius primis senectus.
+                    <span class="bold-text">Summary.</span> The recent introduction of large language models (LLMs) has revolutionized the field of robotics by enabling contextual reasoning and intuitive human-robot interaction in domains as varied as manipulation, locomotion, and self-driving vehicles.  When viewed as a stand-alone technology, LLMs are known to be vulnerable to jailbreaking attacks, wherein malicious prompters elicit harmful text by bypassing LLM safety guardrails.  To assess the risks of deploying LLMs in robotics, in this paper, we introduce RoboPAIR, the first algorithm designed to jailbreak LLM-controlled robots.  Unlike existing, textual attacks on LLM chatbots, RoboPAIR elicits harmful physical actions from LLM-controlled robots, a phenomenon we experimentally demonstrate in three scenarios: (i) a <em>white-box</em> setting, wherein the attacker has full access to the NVIDIA Dolphins self-driving LLM, (ii) a <em>gray-box</em> setting, wherein the attacker has partial access to a Clearpath Robotics Jackal UGV robot equipped with a GPT-4o planner, and (iii) a <em>black-box</em> setting, wherein the attacker has only query access to the GPT-3.5-integrated Unitree Robotics Go2 robot dog. In each scenario and across three new datasets of harmful robotic actions, we demonstrate that RoboPAIR, as well as several static baselines, finds jailbreaks quickly and effectively, often achieving 100% attack success rates.  Our results reveal, for the first time, that the risks of jailbroken LLMs extend far beyond text generation, given the distinct possibility that jailbroken robots could cause physical damage in the real world. Indeed, our results on the Unitree Go2 represent the first successful jailbreak of a deployed commercial robotic system. Addressing this emerging vulnerability is critical for ensuring the safe deployment of LLMs in robotics.
                 </p>
-                <!-- <p>
-                    <span class="bold-text">Summary.</span> Recent research has shown that large language models (LLMs) such as OpenAI's ChatGPT are susceptible to jailbreaking attacks, wherein malicious users fool an LLM into generating harmful content (e.g., bomb-building instructions). However, these attacks are generally limited to eliciting text. In contrast, we consider attacks on LLM-controlled robots, which, if jailbroken, could be fooled into causing physical harm in the real world. Our attacks successfully jailbreak a self-driving LLM, a wheeled academic robot, and, most concerningly, the Unitree Go2 robot dog, which is actively deployed in war zones and by law enforcement. This serves as a critical security warning: Robots controlled by LLMs are highly susceptible to attacks, and thus there is an urgent need for new defenses.
-                </p> -->
 
                 <p>
-                    <span class="bold-text">Responsible disclosure.</span> Lorem ipsum odor amet, consectetuer adipiscing elit. Dis placerat orci luctus quis tincidunt. Eget ad porttitor elementum pharetra, posuere amet! Duis pulvinar convallis ornare eu platea. Inceptos iaculis sit montes netus finibus et augue commodo. Habitant habitasse curae massa habitant nec leo.
-                </p>
-
-                <!-- <p>
                     <span class="bold-text">Responsible disclosure.</span> Prior to the public release of this work, we shared our findings with leading AI companies as well as the manufacturers of the robots used in this study.
-                </p> -->
+                </p>
                 
                 <p>
                     <span class="bold-text">BibTex.</span> 
                     If you find our work useful in your research, please consider citing our paper.
                 </p>
                 <div class="bibtex-container">
-
-                <pre>
-@article{...,
-    title={...},
-    author={...},
-    journal={...},
-    year={2024}
-}</pre>
                     
-                <!-- <pre>
+                <pre>
 @article{robey2024jailbreaking,
     title={Jailbreaking LLM-Controlled Robots},
     author={Robey, Alexander and Ravichandran, Zachary and Kumar, Vijay and Hassani, Hamed and Pappas, George J.},
-    journal={arXiv preprint arXiv:xxx},
+    journal={arXiv preprint arXiv:[TDB]},
     year={2024}
-}</pre> -->
+}</pre>
                 </div>
             </div>
                 
