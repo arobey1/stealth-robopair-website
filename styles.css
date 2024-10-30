@@ -142,15 +142,17 @@ body {
     line-height: 1.3rem;
 }
 
-.research-video-with-caption {
+.research-video-with-caption,
+.image-with-caption {
     text-align: center;
     margin: 10px 0;
     margin-bottom: 30px;
     margin-top: 0px;
 }
 
-.research-video-with-caption video {
-    width: 75%; /* 75% width on desktop */
+.research-video-with-caption video,
+.image-with-caption img {
+    width: 100%; /* 75% width on desktop */
     height: auto;
     margin: 0 auto;
     border: none;
@@ -170,7 +172,8 @@ body {
     margin-top: 10px;
 }
 
-.research-video-with-caption .figure-label {
+.research-video-with-caption .figure-label,
+.image-with-caption .figure-label {
     font-weight: bold;
     color: red;
 }
