@@ -27,6 +27,52 @@
     <div class="container">
         
         <main>
+
+            <script>
+                // Zoomable images
+                document.addEventListener("DOMContentLoaded", function () {
+                    const zoomableImages = document.querySelectorAll('img[data-zoomable]');
+                    const overlay = document.createElement('div');
+                    overlay.id = 'image-overlay';
+                    const overlayImage = document.createElement('img');
+                    overlay.appendChild(overlayImage);
+                    document.body.appendChild(overlay);
+
+                    zoomableImages.forEach(image => {
+                        image.addEventListener('click', function () {
+                            overlayImage.src = image.src;
+                            overlay.classList.add('active');
+                        });
+                    });
+
+                    overlay.addEventListener('click', function () {
+                        overlay.classList.remove('active');
+                    });
+                });
+
+                document.addEventListener("DOMContentLoaded", function () {
+                    const zoomableTables = document.querySelectorAll("table[data-zoomable]");
+                    const tableOverlay = document.createElement("div");
+                    tableOverlay.id = "table-overlay";
+                    document.body.appendChild(tableOverlay);
+
+                    tableOverlay.addEventListener("click", () => {
+                        tableOverlay.classList.remove("active");
+                    });
+
+                    zoomableTables.forEach(table => {
+                        table.addEventListener("click", function () {
+                            const clone = table.cloneNode(true);
+                            clone.style.width = "100%";  // Maintain table width
+                            clone.style.height = "auto"; // Auto height to maintain proportions
+                            tableOverlay.innerHTML = '';  // Clear previous content
+                            tableOverlay.appendChild(clone);
+                            tableOverlay.classList.add("active");
+                        });
+                    });
+                });
+            </script>
+
             <div class="research-page-heading-container">
                 <h1 class="research-page-title">Jailbreaking LLM-Controlled Robots</h1>
                 <div class="research-page-meta">
@@ -39,16 +85,20 @@
 
             <div class="social-icons">
                 <a href="https://arxiv.org/pdf/2410.13691" target="_blank">
-                    <img src="../../img/icons/pdf-black.png" alt="Paper">
+                    <img src="img/icons/pdf-black.png" alt="Paper">
                     <div>[arXiv paper]</div>
                 </a>
                 <a href="https://x.com/AlexRobey23/status/1846914890029748272">
-                    <img src="../../img/icons/twitter-black.png" alt="Twitter">
+                    <img src="img/icons/twitter-black.png" alt="Twitter">
                     <div>[Twitter thread]</div>
                 </a>
                 <a href="https://arobey1.github.io/writing/jailbreakingrobots.html">
-                    <img src="../../img/icons/blog-black.png" alt="Cap">
+                    <img src="img/icons/blog-black.png" alt="Cap">
                     <div>[Blog post]</div>
+                </a>
+                <a href="files/research/robopair-poster.pdf">
+                    <img src="img/icons/poster-black.png" alt="Poster">
+                    <div>[Poster]</div>
                 </a>
                 <!-- <a href="https://github.com/">
                     <img src="../../img/icons/github-black.png" alt="GitHub">
@@ -77,8 +127,8 @@
                     <span class="bold-text">Responsible disclosure.</span> Prior to the public release of this work, we shared our findings with leading AI companies as well as the manufacturers of the robots used in this study.
                 </p>
 
-                <figure class="image-with-caption">
-                    <img src="img/writing/jailbreaking-robots/robopair-poster.jpg" alt="Refusal GIF" class="wide-image">
+                <figure class="image-with-caption zoomable">
+                    <img src="img/writing/jailbreaking-robots/robopair-poster.jpg" alt="Refusal GIF" class="wide-image" data-zoomable>
                     <figcaption>
                         <div class="caption">
                             <span class="figure-label">Figure 2:</span> 
