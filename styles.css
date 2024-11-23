@@ -77,6 +77,98 @@ body {
     color: #555;
 }
 
+.news-section {
+    margin-top: 20px;
+    width: 100%;
+    text-align: left;
+    font-family: 'Palatino', 'Palatino Linotype', 'Book Antiqua', serif;
+}
+
+.news-section h2 {
+    margin-bottom: 20px;
+    font-size: 1.25rem;
+    text-align: center;
+    position: relative;
+    font-family: 'Palatino', 'Palatino Linotype', 'Book Antiqua', serif;
+}
+
+.news-section h2::before {
+    left: 0;
+}
+
+.news-section h2::after {
+    right: 0;
+}
+
+.news-section ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.news-section ul li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+.news-section ul li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 14px;
+    height: 14px;
+    background-image: url('img/icons/soccerball.png');
+    background-size: cover; /* Make sure the image fits the size */
+}
+
+
+.news-section ul li a {
+    text-decoration: underline;
+    color: #555;
+}
+
+.news-section ul li a:hover {
+    text-decoration: underline;
+    color: #333;
+}
+
+.section-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 1.25rem;
+    font-family: 'Palatino', 'Palatino Linotype', 'Book Antiqua', serif;
+    position: relative;
+}
+
+.section-heading span {
+    display: inline-block;
+    position: relative;
+    z-index: 1; /* Ensure the text is above the lines */
+}
+
+.section-heading::before,
+.section-heading::after {
+    content: "";
+    flex-grow: 1; /* Allow the lines to grow dynamically */
+    height: 1px;
+    background-color: #333;
+    position: relative;
+    top: 50%;
+    z-index: 0; /* Ensure the lines are behind the text */
+    margin: 0 10px; /* Add space between the text and the lines */
+}
+
+.section-heading::before {
+    margin-right: 0px;
+}
+
+.section-heading::after {
+    margin-left: 0px;
+}
+
 .bold-text {
     font-weight: bold;
 }

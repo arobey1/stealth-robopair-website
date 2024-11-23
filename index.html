@@ -111,23 +111,67 @@
                   <source src="files/research/bomb.mp4" type="video/mp4">
                   Your browser does not support the video tag.
                 </video>
-                <div class="caption">
+                <!-- <div class="caption">
                     <span class="figure-label">Figure 1:</span> 
                     <span class="caption-text">Jailbreaking the Unitree Go2 robot dog.</span>
-                </div>
+                </div> -->
+            </div>
+
+            <div class="news-section">
+                <h2 class="section-heading"><span>Media coverage</span></h2>
+            </div>
+            <div class="social-icons">
+                <a href="https://spectrum.ieee.org/jailbreak-llm" target="_blank">
+                    <img src="img/media-icons/ieee-spectrum.png" alt="IEEE-Spectrum">
+                    <div>[IEEE Spectrum]</div>
+                </a>
+                <a href="https://www.independent.co.uk/tech/ai-artificial-intelligence-safe-vulnerability-robot-b2631080.html" target="_blank">
+                    <img src="img/media-icons/independent.png" alt="Independent">
+                    <div>[The Independent]</div>
+                </a>
+                <a href="https://fortune.com/2024/11/12/legal-tech-robin-ai-raises-25-million-series-b-plus-llm/" target="_blank">
+                    <img src="img/media-icons/fortune.png" alt="Fortune">
+                    <div>[Fortune Magazine]</div>
+                </a>
+                <a href="https://www.yahoo.com/tech/ai-controlled-robots-jailbroken-results-211340535.html?guccounter=1&guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&guce_referrer_sig=AQAAALkFb8JXk2KJ6HD7_qF6j7OMvT7MNNJUAhakkDPaNtbY7NCm83PjjpKMdBdNxMx4z20fOX9VmSyVFrhY6q8FkhtYNUPE0x1KVRc8LCH1Ddguc_KHTm_gQBcw4bfsZSYZU68Cg1KlnEqhjKfZqcdrRN9womsEbjms64mtg9pxO9AY" target="_blank">
+                    <img src="img/media-icons/yahoo.png" alt="Yahoo">
+                    <div>[Yahoo]</div>
+                </a>
             </div>
             
             <div class="research-page-content">
 
-                <p>
-                    <span class="bold-text">Summary.</span> The recent introduction of large language models (LLMs) has revolutionized the field of robotics by enabling contextual reasoning and intuitive human-robot interaction in domains as varied as manipulation, locomotion, and self-driving vehicles.  When viewed as a stand-alone technology, LLMs are known to be vulnerable to jailbreaking attacks, wherein malicious prompters elicit harmful text by bypassing LLM safety guardrails.  To assess the risks of deploying LLMs in robotics, in this paper, we introduce RoboPAIR, the first algorithm designed to jailbreak LLM-controlled robots.  Unlike existing, textual attacks on LLM chatbots, RoboPAIR elicits harmful physical actions from LLM-controlled robots, a phenomenon we experimentally demonstrate in three scenarios: (i) a white-box setting, wherein the attacker has full access to the NVIDIA Dolphins self-driving LLM, (ii) a gray-box setting, wherein the attacker has partial access to a Clearpath Robotics Jackal UGV robot equipped with a GPT-4o planner, and (iii) a black-box setting, wherein the attacker has only query access to the GPT-3.5-integrated Unitree Robotics Go2 robot dog. In each scenario and across three new datasets of harmful robotic actions, we demonstrate that RoboPAIR, as well as several static baselines, finds jailbreaks quickly and effectively, often achieving 100% attack success rates.  Our results reveal, for the first time, that the risks of jailbroken LLMs extend far beyond text generation, given the distinct possibility that jailbroken robots could cause physical damage in the real world. Indeed, our results on the Unitree Go2 represent the first successful jailbreak of a deployed commercial robotic system. Addressing this emerging vulnerability is critical for ensuring the safe deployment of LLMs in robotics.
-                </p>
+                <div class="news section">
+                    <h2 class="section-heading"><span>Abstract</span></h2>
+                </div>
 
                 <p>
-                    <span class="bold-text">Responsible disclosure.</span> Prior to the public release of this work, we shared our findings with leading AI companies as well as the manufacturers of the robots used in this study.
+                    The recent introduction of large language models (LLMs) has revolutionized the field of robotics by enabling contextual reasoning and intuitive human-robot interaction in domains as varied as manipulation, locomotion, and self-driving vehicles.  When viewed as a stand-alone technology, LLMs are known to be vulnerable to jailbreaking attacks, wherein malicious prompters elicit harmful text by bypassing LLM safety guardrails.  To assess the risks of deploying LLMs in robotics, in this paper, we introduce RoboPAIR, the first algorithm designed to jailbreak LLM-controlled robots.  Unlike existing, textual attacks on LLM chatbots, RoboPAIR elicits harmful physical actions from LLM-controlled robots, a phenomenon we experimentally demonstrate in three scenarios: (i) a white-box setting, wherein the attacker has full access to the NVIDIA Dolphins self-driving LLM, (ii) a gray-box setting, wherein the attacker has partial access to a Clearpath Robotics Jackal UGV robot equipped with a GPT-4o planner, and (iii) a black-box setting, wherein the attacker has only query access to the GPT-3.5-integrated Unitree Robotics Go2 robot dog. In each scenario and across three new datasets of harmful robotic actions, we demonstrate that RoboPAIR, as well as several static baselines, finds jailbreaks quickly and effectively, often achieving 100% attack success rates.  Our results reveal, for the first time, that the risks of jailbroken LLMs extend far beyond text generation, given the distinct possibility that jailbroken robots could cause physical damage in the real world. Indeed, our results on the Unitree Go2 represent the first successful jailbreak of a deployed commercial robotic system. Addressing this emerging vulnerability is critical for ensuring the safe deployment of LLMs in robotics.
                 </p>
+
+                <div class="news section">
+                    <h2 class="section-heading"><span>Summary of our results</span></h2>
+                </div>
 
                 <figure class="image-with-caption zoomable">
+                    <img src="img/overview.png" alt="Refusal GIF" class="wide-image" style="width: 100%;" data-zoomable>
+                    <figcaption>
+                        <!-- <div class="caption">
+                            <span class="figure-label">Figure 2:</span> 
+                            <span class="caption-text">An overview of our results.</span>
+                        </div> -->
+                    </figcaption>
+                </figure> 
+
+                <div class="news section">
+                    <h2 class="section-heading"><span>Responsible Disclosure</span></h2>
+                </div>
+
+                <p>
+                    Prior to the public release of this work, we shared our findings with leading AI companies as well as the manufacturers of the robots used in this study.
+                </p>
+
+                <!-- <figure class="image-with-caption zoomable">
                     <img src="img/robopair-poster.jpg" alt="Refusal GIF" class="wide-image" data-zoomable>
                     <figcaption>
                         <div class="caption">
@@ -135,22 +179,12 @@
                             <span class="caption-text">An overview of this research.</span>
                         </div>
                     </figcaption>
-                </figure> 
+                </figure>  -->
 
-                <figure class="image-with-caption zoomable">
-                    <img src="img/overview.png" alt="Refusal GIF" class="wide-image" style="width: 100%;" data-zoomable>
-                    <figcaption>
-                        <div class="caption">
-                            <span class="figure-label">Figure 3:</span> 
-                            <span class="caption-text">An overview of our results.</span>
-                        </div>
-                    </figcaption>
-                </figure> 
+                <div class="news section">
+                    <h2 class="section-heading"><span>BibTex</span></h2>
+                </div>
                 
-                <p>
-                    <span class="bold-text">BibTex.</span> 
-                    If you find our work useful in your research, please consider citing our paper.
-                </p>
                 <div class="bibtex-container">
                     
                 <pre>
