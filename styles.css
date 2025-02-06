@@ -13,7 +13,7 @@ html {
 body {
     background-color: rgba(240, 240, 240, 0.9); /* Light gray with 90% opacity */
     color: #333;
-    padding: 20px;
+    padding: 0px;
     display: flex;
     justify-content: center;
     background-image: url('img/background.png');
@@ -212,6 +212,18 @@ body {
 
 @media (max-width: 768px) {
     .research-page-date, .research-page-author {
+        font-size: 0.9rem; /* Smaller font size on mobile */
+    }
+}
+
+.research-page-conference {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .research-page-conference {
         font-size: 0.9rem; /* Smaller font size on mobile */
     }
 }
